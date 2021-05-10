@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-template-rows: 160px 160px 160px;
+    grid-gap: 8px;
+    justify-content: center;
+}
+  
+
+@media only screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+        grid-gap: 0.5vw;
+        justify-content: space-evenly;
+    }
+  }

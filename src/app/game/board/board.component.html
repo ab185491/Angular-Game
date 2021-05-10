@@ -1,0 +1,6 @@
+<main>     
+    <div *ngFor="let cell of matrix">
+        <app-square *ngFor="let val of cell; let i = index" [value]="val" (click)="clicked(i, cell)">
+        </app-square>
+    </div>
+</main>

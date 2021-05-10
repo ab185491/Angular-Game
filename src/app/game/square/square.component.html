@@ -1,0 +1,19 @@
+<!-- <div class="square"> -->
+    <button [class.isDisabled]="value" [disabled]="value" mat-raised-button *ngIf="!value || (value!='X' && value!='O' ) ">
+        {{value}}
+    </button>
+
+
+    <button mat-raised-button  *ngIf="value == 'X'">
+        <div class="square__icon">
+        <mat-icon [inline]="true" color="primary">close</mat-icon>
+        </div>
+    </button>
+
+    
+    <button mat-raised-button  *ngIf="value == 'O'">
+        <div class="square__icon">
+            <mat-icon [inline]="true" color="warn">fiber_manual_record</mat-icon>
+        </div>
+    </button>
+<!-- </div> -->

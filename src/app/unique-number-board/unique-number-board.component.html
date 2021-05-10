@@ -1,0 +1,7 @@
+<main>     
+    <div *ngFor="let cell of matrix; let j = index">
+        <app-square *ngFor="let val of cell; let i = index" [value]="val" (click)="clicked(i, j, cell)">
+        </app-square>
+    </div>
+</main>
+<button class="restart" color="primary" (click)="restart()"mat-raised-button>Start Over!</button>
